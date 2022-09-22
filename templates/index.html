@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação de Moedas</title>
+    <style>
+        body {
+            background-color: rgb(199, 253, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        header h1 {
+            text-align: center;
+            background-color: rgb(192, 134, 247);
+            margin: 0;
+            height: 60px;
+            padding-top: 15px;
+            font-size: 2.5em;
+            color: white
+        }
+
+        main {
+            background-color: white;
+            max-width: 500px;
+            height: 300px;
+            margin: auto;
+            margin-top: 60px;
+            padding: 5px 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.233);
+        }
+
+        main p {
+            font-size: 2.5em;
+        }
+
+        main p.normal {
+            font-size: 1.5em;
+        }
+
+        footer {
+            background-color: rgb(192, 134, 247);
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+            padding: 10px;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <h1>Cotação de Moedas</h1>
+
+    </header>
+
+
+    <main>
+        <p class="normal">Cotação em tempo real</p>
+        <p>Dolar: R$ {{ usd }}</p>
+        <p>Euro: R$ {{ eur }}</p>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/hitalloazevedo" target="_blank">Hitallo Azevedo</a>.</p>
+    </footer>
+</body>
+</html>
